@@ -49,10 +49,10 @@
             <field name="arch" type="xml">
               
                 <tree string="Course Tree">
-                  <search>
+                 
                     <field name="name"/>
                     <field name="responsible_id"/>
-                    </search>
+                 
                 </tree>
             </field>
         </record>
