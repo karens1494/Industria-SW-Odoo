@@ -38,7 +38,7 @@
              <search>
                     <field name="name"/>
                     <field name="description"/>
-             <search>
+             </search>
             </field>
         </record>
   
