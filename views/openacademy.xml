@@ -3,14 +3,16 @@
   <odoo>
             <record model="ir.ui.view" id="course_form_view">
             <field name="name">course.form</field>
-            <field _name="model">openacademy.course</field>
+            <field name="model">openacademy.course</field>
             <field name="arch" type="xml">
                 <form string="Course Form">
                     <sheet>
                         <group>
+                          <search>
                             <field name="name"/>
                             <field name="responsible_id"/>
                             <field name="description"/>
+                          </search>
                         </group>
                     <notebook>
                             <page string="Description">
@@ -31,7 +33,7 @@
         </record>
           <record model="ir.ui.view" id="course_search_view">
             <field name="name">course.search</field>
-            <field _name="model">openacademy.course</field>
+            <field name="model">openacademy.course</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -43,11 +45,14 @@
         <!-- override the automatically generated list view for courses -->
         <record model="ir.ui.view" id="course_tree_view">
             <field name="name">course.tree</field>
-            <field _name="model">openacademy.course</field>
+            <field name="model">openacademy.course</field>
             <field name="arch" type="xml">
+              
                 <tree string="Course Tree">
+                  <search>
                     <field name="name"/>
                     <field name="responsible_id"/>
+                    </search>
                 </tree>
             </field>
         </record>
@@ -85,15 +90,17 @@
         <!-- session form view -->
         <record model="ir.ui.view" id="session_form_view">
             <field name="name">session.form</field>
-            <field _name="model">openacademy.session</field>
+            <field name="model">openacademy.session</field>
             <field name="arch" type="xml">
                 <form string="Session Form">
                     <sheet>
                         <group>
                             <group string="General">
+                              <search>
                                 <field name="course_id"/>
                                 <field name="name"/>
                                 <field name="instructor_id"/>
+                              </search>
                             </group>
                             <group string="Schedule">
                                 <field name="start_date"/>
@@ -111,11 +118,13 @@
           <!-- session tree/list view -->
         <record model="ir.ui.view" id="session_tree_view">
             <field name="name">session.tree</field>
-            <field _name="model">openacademy.session</field>
+            <field name="model">openacademy.session</field>
             <field name="arch" type="xml">
                 <tree string="Session Tree">
+                  <search>
                     <field name="name"/>
                     <field name="course_id"/>
+                  </search>
                 </tree>
             </field>
         </record>
