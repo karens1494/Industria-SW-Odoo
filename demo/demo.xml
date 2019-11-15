@@ -1,0 +1,19 @@
+  
+<odoo>
+
+        <record model="openacademy.course" id="course0">
+            <field name="name">Curso 0</field>
+            <field name="description">Matematicas
+            </field>
+        </record>
+        <record model="openacademy.course" id="course1">
+            <field name="name">Curso 1</field>
+            <!-- no description for this one -->
+        </record>
+        <record model="openacademy.course" id="course2">
+            <field name="name">Curso 2</field>
+            <field name="description">Español</field>
+        </record>
+
+
+</odoo>
