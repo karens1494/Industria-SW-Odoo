@@ -9,10 +9,8 @@ class Course(models.Model):
     description = fields.Text()
 
     # Relaciones entre tablas
-    responsible_id = fields.Many2one('res.users',
-                                     ondelete='set null', string="Responsable", index=True)
-    session_ids = fields.One2many(
-        'openacademy.session', 'course_id', string="Sessions")
+    responsible_id = fields.Many2one('res.users',ondelete='set null', string="Responsable", index=True)
+    session_ids = fields.One2many('openacademy.session', 'course_id', string="Sessions")
 
 #
 #     @api.depends('value')
