@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+# -*- coding: utf-8 -*-
 
 <odoo>
 
         <record id="group_manager" model="res.groups">
-            <field name="name">OpenAcademy / Manager</field>
+            <field name="name">OpenAcademy/Manager</field>
         </record>
         
         <record id="only_responsible_can_modify" model="ir.rule">
