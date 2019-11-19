@@ -85,7 +85,7 @@ class Session(models.Model):
                 },
             }
         
-        @api.depends('start_date', 'duration')
+    @api.depends('start_date', 'duration')
     def _get_end_date(self):
         for r in self:
             if not (r.start_date and r.duration):
